@@ -1,6 +1,6 @@
 React, Typescript, Next.js, Redux, Redux Toolkit, Tailwind
 
-First, run the development server:
+Commands
 
 ```bash
 # run in app folder

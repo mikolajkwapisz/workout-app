@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "./state/Providers";
+import RefreshButton from "./components/userDataLoader/RefreshDataButton";
+import { UserDataLoader } from "./components/userDataLoader/UserDataLoader";
 
 
 export const metadata: Metadata = {
@@ -17,6 +19,8 @@ export default function RootLayout({
     <Providers>
       <html lang="en">
         <body>
+          <UserDataLoader/>
+          <div className="flex w-dvw justify-end absolute bg-transparent"><RefreshButton/></div> { /*temporal nav*/ }
           {children}
         </body>
       </html>

@@ -1,13 +1,62 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme{
+  --color-custom-bg: #0D0D0D;
+  --color-custom-bg-light: #E0E0E0;
+  --color-custom-primary: #1F1F1F;
+  --color-custom-secondary: #2C2C2C;
+  --color-custom-accent: #E63946;
+  --color-custom-text: #DADADA;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* --color-custom-navy: #1D2D50;
+  --color-custom-blue: #007BFF;
+  --color-custom-gray: #F5F5F5;
+  --color-custom-cyan: #00A8E8;
+  --color-custom-green: #32CD32;
+  --color-custom-orange: #FF6B35; */
+
+/* Minimalistic Dark */
+
+/* Dark bold */
+
+  /* --color-custom-background: #121212,
+  --color-custom-primary: #FF3D00,
+  --color-custom-secondary: #FFD700,
+  --color-custom-accent: #00BFFF,
+  --color-custom-text: #E0E0E0 */
+
+/* :root {
+  --color-deep-navy: #1D2D50;
+  --color-electric-blue: #007BFF;
+  --color-soft-gray: #F5F5F5;
+  --color-cool-cyan: #00A8E8;
+  --color-lime-green: #32CD32;
+  --color-burnt-orange: #FF6B35;
+} */
+
+@font-face {
+  font-family: 'poppins';
+  src: url(./public/fonts/Poppins/Poppins-Medium.ttf);
 }
+
+@font-face {
+  font-family: 'dm-sans-bold';
+  src: url(./public/fonts/DM_Sans/DMSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'dm-sans-regular';
+  src: url(./public//fonts//DM_Sans/DMSans-Regular.ttf);
+}
+
+/*
+
+Deep Navy (#1D2D50) – Strong background base
+Electric Blue (#007BFF) – Calls-to-action and buttons
+Soft Gray (#F5F5F5) – Clean, modern background balance
+Cool Cyan (#00A8E8) – Highlights and interactive elements
+Lime Green (#32CD32) – Success indicators
+Burnt Orange (#FF6B35) – Bold accents for urgency
+
+*/

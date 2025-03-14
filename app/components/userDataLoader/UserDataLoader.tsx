@@ -7,13 +7,11 @@ import { fetchUserData } from "@/app/state/slices/userSlice";
 export const UserDataLoader = () => {
   const dispatch = useDispatch<AppDispatch>();
   const { loading, error } = useSelector((state: RootState) => state.user);
+  if (error) console.log(error)
 
   useEffect(() => {
     dispatch(fetchUserData());
   }, [dispatch]);
-
-  if (loading) return <p>Loading user data...</p>;
-  if (error) return <p>Error: {error}</p>;
 
   return null; // This component only fetches data
 };

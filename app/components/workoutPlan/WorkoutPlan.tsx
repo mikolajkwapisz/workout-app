@@ -8,8 +8,6 @@ export const UserWorkoutPlan = () => {
   const workouts = useSelector((state: RootState) => state.workouts);
   const exercises = useSelector((state: RootState) => state.exercises);
 
-  if (!user.id) return <p>No user data available</p>;
-
   return (
     <div className="text-white">
       <h2 className="text-2xl mb-2">Workouts</h2>

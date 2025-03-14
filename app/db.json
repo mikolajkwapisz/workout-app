@@ -1,24 +1,28 @@
 {"data": {
   "user": {
     "id": 1,
-    "dayIds": [1, 2, 3]
-  },
-  "days": [
-    { "id": 1, "workoutId": 101 },
-    { "id": 2, "workoutId": 102 },
-    { "id": 3, "workoutId": 103 }
-  ],
-  "workouts": [
-    { "id": 101, "name": "Upper Body", "exerciseIds": [201, 202] },
-    { "id": 102, "name": "Leg Day", "exerciseIds": [203, 204] },
-    { "id": 103, "name": "Cardio", "exerciseIds": [205] }
-  ],
-  "exercises": [
-    { "id": 201, "name": "Push-ups", "reps": [10, 12, 15], "rest": 120 },
-    { "id": 202, "name": "Pull-ups", "reps": [5, 7, 10], "rest": 100 },
-    { "id": 203, "name": "Squats", "reps": [15, 20, 25], "rest": 120 },
-    { "id": 204, "name": "Lunges", "reps": [12, 15, 18], "rest": 180 },
-    { "id": 205, "name": "Running", "reps": [30], "rest": 60 }
-  ]
+    "dayIds": [1, 2, 3, 4, 5, 6, 7]
+    },
+    "days": [
+      { "id": 1, "workoutId": 101 },
+      { "id": 2, "workoutId": 102 },
+      { "id": 3, "workoutId": 103 },
+      { "id": 4, "workoutId": 102 },
+      { "id": 5, "workoutId": 101 },
+      { "id": 6, "workoutId": 103 },
+      { "id": 7, "workoutId": 102 }
+    ],
+    "workouts": [
+      { "id": 101, "name": "Upper Body", "exerciseIds": [201, 202, 204, 205] },
+      { "id": 102, "name": "Leg Day", "exerciseIds": [203, 204, 201, 202] },
+      { "id": 103, "name": "Cardio", "exerciseIds": [205, 201, 202] }
+    ],
+    "exercises": [
+      { "id": 201, "name": "Bench Press", "reps": [10, 12, 15], "rest": 120 },
+      { "id": 202, "name": "Pull-ups", "reps": [5, 7, 10], "rest": 100 },
+      { "id": 203, "name": "Squats", "reps": [15, 20, 25], "rest": 120 },
+      { "id": 204, "name": "Lunges", "reps": [12, 15, 18], "rest": 180 },
+      { "id": 205, "name": "Running", "reps": [30], "rest": 60 }
+    ]
 }
 }

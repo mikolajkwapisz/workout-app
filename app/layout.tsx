@@ -3,6 +3,7 @@ import "./globals.css";
 import { Providers } from "./state/Providers";
 import RefreshButton from "./components/userDataLoader/RefreshDataButton";
 import { UserDataLoader } from "./components/userDataLoader/UserDataLoader";
+import NavbarWrapper from "./components/navbar/NavbarWrapper";
 
 
 export const metadata: Metadata = {
@@ -18,9 +19,9 @@ export default function RootLayout({
   return (
     <Providers>
       <html lang="en">
-        <body>
+        <body className="flex flex-col min-h-screen max-w-screen">
           <UserDataLoader/>
-          <div className="flex w-dvw justify-end absolute bg-transparent"><RefreshButton/></div> { /*temporal nav*/ }
+          <NavbarWrapper />
           {children}
         </body>
       </html>

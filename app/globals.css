@@ -26,14 +26,14 @@
   --color-custom-accent: #00BFFF,
   --color-custom-text: #E0E0E0 */
 
-/* :root {
-  --color-deep-navy: #1D2D50;
-  --color-electric-blue: #007BFF;
-  --color-soft-gray: #F5F5F5;
-  --color-cool-cyan: #00A8E8;
-  --color-lime-green: #32CD32;
-  --color-burnt-orange: #FF6B35;
-} */
+:root {
+  --color-custom-bg: #0D0D0D;
+  --color-custom-bg-light: #E0E0E0;
+  --color-custom-primary: #1F1F1F;
+  --color-custom-secondary: #2C2C2C;
+  --color-custom-accent: #E63946;
+  --color-custom-text: #DADADA;
+}
 
 @font-face {
   font-family: 'poppins';
@@ -48,6 +48,16 @@
 @font-face {
   font-family: 'dm-sans-regular';
   src: url(./public//fonts//DM_Sans/DMSans-Regular.ttf);
+}
+
+html, body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+*{
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 /*

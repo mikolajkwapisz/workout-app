@@ -1,0 +1,9 @@
+/* Add the following styles to your grid container */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust columns */
+  gap: 10px;
+  max-width: 100%;  /* Ensures grid doesn't exceed the viewport width */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+}

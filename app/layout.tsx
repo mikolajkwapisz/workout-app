@@ -22,7 +22,9 @@ export default function RootLayout({
         <body className="flex flex-col min-h-screen max-w-screen">
           <UserDataLoader/>
           <NavbarWrapper />
-          {children}
+          <div className="flex-grow flex min-h-dvh">
+            {children}
+          </div>
         </body>
       </html>
     </Providers>

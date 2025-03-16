@@ -32,7 +32,6 @@ export const fetchUserData = createAsyncThunk(
       }
 
       const data = await res.json();
-      console.log("Fetched Data:", data);
 
       // Dispatch user details
       dispatch(setUser({ id: data.user.id, dayIds: data.user.dayIds }));

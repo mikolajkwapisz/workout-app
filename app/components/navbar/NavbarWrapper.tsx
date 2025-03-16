@@ -1,7 +1,6 @@
 'use client';
 
 // Wrapper for hiding navbar in certain routes
-
 import { usePathname } from "next/navigation";
 import Navbar from "./Navbar";
 

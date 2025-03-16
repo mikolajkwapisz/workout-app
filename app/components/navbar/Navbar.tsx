@@ -1,31 +1,19 @@
-import RefreshButton from "../userDataLoader/RefreshDataButton";
-import Link from "next/link";
+'use client';
+import styles from "./navbar.module.css";
+import DesktopMenu from "./menus/DesktopMenu";
+import MobileMenu from "./menus/MobileMenu";
+import { useWindowSize } from "@/app/hooks/useWindowSize";
 
 const Navbar = () => {
+  
+  const {width} = useWindowSize()
   return (
-    <nav className="flex justify-between items-center p-5 bg-custom-bg text-custom-text">
-      
-      <div>
-        <ul className="flex gap-6">
-          <li>
-            <Link href="/" className="text-xl hover:text-custom-accent">Home</Link>
-          </li>
-          <li>
-            <Link href="/workouts" className="text-xl hover:text-custom-accent">Workouts</Link>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h1 className="text-3xl font-bold">Workout app</h1>
-      </div> 
+    <nav className={`${styles.container} fixed top-0 left-0 h-[75px] w-screen bg-custom-bg text-custom-text z-50`}>
 
-      {/* Refresh Button */}
-      <div>
-        <div className="bg-transparent"><RefreshButton/></div>
-      </div>
-      
+      {/* Display MobileMenu while below 450px*/}
+      {width < 450 ? <MobileMenu />: <DesktopMenu />}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
